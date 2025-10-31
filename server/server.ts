@@ -1,9 +1,16 @@
+import cors from "cors";
 import express from "express";
 import { connectDB } from "./src/database/db.ts";
 import { userRouter } from "./src/routes/user.router.ts";
-
 const app = express();
 const PORT = process.env.PORT || 8000;
+
+app.use(
+  cors({
+    origin: ["http://localhost:3000"],
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 

@@ -9,6 +9,7 @@
     "dev": "nodemon server.ts"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
     "@types/mongoose": "^5.11.97",
     "@types/node": "^24.6.2",
